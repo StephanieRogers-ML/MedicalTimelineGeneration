@@ -1,22 +1,10 @@
-### Deep learning project seed
-Use this seed to start new deep learning / ML projects.
 
-- Built in setup.py
-- Built in requirements
-- Examples with MNIST
-- Badges
-- Bibtex
-
-#### Goals  
-The goal of this seed is to structure ML paper-code the same so that work can easily be extended and replicated.   
-
-### DELETE EVERYTHING ABOVE FOR YOUR PROJECT  
  
 ---
 
 <div align="center">    
  
-# Your Project Name     
+# Medical Timeline Generation    
 
 [![Paper](http://img.shields.io/badge/paper-arxiv.1001.2234-B31B1B.svg)](https://www.nature.com/articles/nature14539)
 [![Conference](http://img.shields.io/badge/NeurIPS-2019-4b44ce.svg)](https://papers.nips.cc/book/advances-in-neural-information-processing-systems-31-2018)
@@ -35,7 +23,7 @@ Conference
 </div>
  
 ## Description   
-What it does   
+Developed during three-month AI Tech Sprint from January- April 2021, this application accepts different data inputs to generate a users personal medical timeline from submitted documentation and supplemental information.  This project is broken up into determining if an event is relevant or not and then it uses temporal information such as dates/times and statements that include words like 'before, after, years ago' to sort event blocks.  To ensure we don't overwhelm the user, different filter views will be populated with a max on events visible.   
 
 ## How to run   
 First, install dependencies   

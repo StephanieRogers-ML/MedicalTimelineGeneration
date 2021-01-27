@@ -29,7 +29,7 @@ Developed during three-month AI Tech Sprint from January- April 2021, this appli
 First, install dependencies   
 ```bash
 # clone project   
-git clone https://github.com/YourGithubName/deep-learning-project-template
+git clone https://github.com/StephanieRogers-ML/MedicalTimelineGeneration
 
 # install project   
 cd deep-learning-project-template 
@@ -48,7 +48,7 @@ python lit_classifier_main.py
 ## Imports
 This project is setup as a package which means you can now easily import any file into any other file like so:
 ```python
-from project.datasets.mnist import mnist
+from project.datasets.medical import medical
 from project.lit_classifier_main import LitClassifier
 from pytorch_lightning import Trainer
 
@@ -68,10 +68,8 @@ trainer.test(test_dataloaders=test)
 
 ### Citation   
 ```
-@article{YourName,
-  title={Your Title},
-  author={Your team},
-  journal={Location},
-  year={Year}
+@article{StephanieRogers,
+  title={MedicalTimelineGeneration},
+  year={2021}
 }
 ```   

@@ -16,7 +16,9 @@ ARXIV
 </div>
  
 ## Description   
-Developed during three-month AI Tech Sprint from January- April 2021, this application accepts different data inputs to generate a users personal medical timeline from submitted documentation and supplemental information.  This project is broken up into determining if an event is relevant or not and then it uses temporal information such as dates/times and statements that include words like 'before, after, years ago' to sort event blocks.  To ensure we don't overwhelm the user, different filter views will be populated with a max on events visible.   
+Veterhealth Medical Timeline Generator was developed during a three-month AI Tech Sprint from January- April 2021.  Veterhealth accepts user submitted documents and text to generate a users personal medical timeline from submitted documentation and supplemental information.  
+
+This project is broken up into determining if an event is relevant or not and then it uses temporal information such as dates/times and statements that include words like 'before, after, years ago' to sort event blocks.  To ensure we don't overwhelm the user, different filter views will be populated with a max on events visible.   
 
 
 ### Data
@@ -33,30 +35,30 @@ The models were pre-trained on the entire MIMIC-III data, comprising a collectio
 Tuning
 Saving & Hosting
 
-### Backend
-AWS Amplify is a set of tools and services that help build scalable full stack applications, powered by AWS.
-**Authentication**
-Cognito
-Group: Admin, Patient, Provider
-User:
-**File storage**
-S3
-DynamoDB
-DataStore
-**API**
-GraphQL
-Create
-Mutate
-Query
-Subscribe
+### Backend  
+AWS Amplify is a set of tools and services that help build scalable full stack applications, powered by AWS.  
+**Authentication**  
+Cognito  
+Group: Admin, Patient, Provider  
+User:  
+**File storage**  
+S3  
+DynamoDB  
+DataStore  
+**API**  
+GraphQL  
+Create  
+Mutate  
+Query  
+Subscribe  
 
-**Functions**
-File Upload to S3 Function
-Lambda Trigger on S3 to process & model
+**Functions**  
+File Upload to S3 Function  
+Lambda Trigger on S3 to process & model  
 
-**Predictions**
-Model predictions from BERT and Med7 ammend to database
-**Post**
+**Predictions**  
+Model predictions from BERT and Med7 ammend to database  
+**Post**  
 Sort database by event date.
 For each unique day, group same event type sentences/documents for similarity and deduplication.  
 Ammend unique events into day/type entry and create a counter column for supporting evidence.
